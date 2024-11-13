@@ -1,0 +1,231 @@
+/* this is my header section  */
+header{
+    display: flex;
+   justify-content: space-between;
+   width: 100%;
+   padding: 2%;
+   position: absolute;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1000px;
+    list-style: none;
+    font-size: x-large;
+}
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+/* my header section ends here  */
+
+/* this is my hero section  */
+#hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/Rectangle\ 1.png);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+   justify-content:space-evenly;
+   gap: 50%;
+   color: #fff;
+   top: 100%;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+#hero ul{
+    list-style: none;
+}
+#hero div ul li {
+    
+   padding-top: 500px;
+    text-decoration: none;
+    color: #fff;
+    font-size: medium;
+    font-weight: 700;   
+}
+#hero h1{
+    padding-top: 450px;
+    color: #fff;
+    font-weight: 700;
+    font-size: xx-large;   
+}
+/* my hero section ends here  */
+/* my about section styles */
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8% 2%;
+    gap: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#about  h2{
+    font-size: xx-large;
+    
+}
+#about  ul {
+    font-weight: 800;
+    font-size: xx-large;
+    list-style: none;
+    padding-left: 0%;
+    padding-top: 0%;
+}
+/* my about section style ends here */
+/* this is my services section style */
+#services{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#services .services-inner .services-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 3%;
+}
+#services .services-inner .services-cards .services-card{
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    
+}
+#services .services-inner .services-cards .services-card img{
+width: 100%;
+height: auto;
+}
+
+@media(min-width:768px){
+#services .services-inner .services-cards{
+    flex-wrap: wrap;
+    overflow: visible;
+
+}
+#services .services-inner .services-cards .services-card{
+    flex: 0 0 25%;
+}
+}
+/* my services section style ends here  */
+/* this is my image section style  */
+#image img{
+    width: 100%;
+}
+/* my image section style ends here  */
+/* this is my testimonial section style  */
+#testimonial{
+    padding: 3%;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+   
+.testimonial-card{
+    display: grid;
+    flex-direction: column;
+    gap: 1px;
+    
+}
+.testimonial-cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    
+}
+.testimonial-card-inner{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1%;
+    padding-right: 20%;
+}
+#testimonial .testimonial-inner .testimonial-cards .testimonial-card img{
+    padding: 1%;
+    width: 20%;
+    height: auto;
+}
+@media(min-width:768px){
+    #testimonial .testimonial-inner .testimonial-cards{
+        flex-wrap: wrap;
+        overflow: visible;
+    }
+
+#testimonial .testimonial-inner .testimonial-cards .testimonial-card{
+    flex: 0 0 50%;
+} 
+}
+
+#testimonial .testimonial-inner .testimonial-cards .testimonial-card .testimonial-inner img{
+    width: 100%;
+    
+}
+#testimonial .testimonial-inner .testimonial-cards .testimonial-card p{
+    font-size: 80%;
+    
+}
+/* my testimonial section ends here  */
+/* this is my request section  */
+#request{
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    padding: 5%;
+    background-color: whitesmoke;
+    margin-top: 5%;
+    gap: 2%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#request .InputName{
+    border: none;
+    padding: 4% 6%;
+}
+#request .InputEmail{
+    border: none;
+    padding: 4% 6%;
+}
+#requeat .InputMessage{
+    padding: 5% ;
+    border: none;
+    margin-top: 30px;
+}
+#request form div{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+#request ul li{
+    list-style: none;
+    font-weight: 500;
+    padding-left: 159%;
+    font-size: larger;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* my request section style ends here  */
+/* this is my footer section style  */
+#footer{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    display: grid;
+}
+#footer .footer-inner-cards{
+display: flex;
+justify-content: center;
+align-items: left;
+text-align: center;
+
+}
